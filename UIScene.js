@@ -24,7 +24,7 @@
             this.scene.get('playGame').events.on('updateTimer', (timer) => {
                 this.timerText.setText(`Time: ${timer}`);
             });
-            // Event listener for coin count update
+         
             this.events.on('updateCoins', (count,highestCount) => {
                 this.countText.setText('Coins: ' + count);
                 this.count1Text.setText('Highest Count : ' + highestCount);
